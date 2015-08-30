@@ -1,0 +1,23 @@
+.line-compress.fixed.layer1.top.navbar
+	.navbar-menu
+		.separator15
+		.line
+			div(class="col3",ng-class="{'contact-section': activeLink === 'contacts', 'about-section': activeLink === 'about', 'apps-section': activeLink === 'apps', 'code-section': activeLink === 'code', 'tools-section': activeLink === 'tools'}")
+				a(href="index.html#home",ng-click="setActiveLink('home')",class="logo color-lightblue desktop tablet", ngfx-pulse="true")
+					.separator5
+					<span class="brackets">{</span> nerdarts <span class="brackets">}</span>
+				a(href="index.html#home",ng-click="setActiveLink('home')",class="logo color-lightblue mobile")
+					.separator5
+					{ <span style="font-family:serif;">ʕ•̫͡•ʔ</span> }
+
+			div(class="col7 nav", id="top-menu")
+				.line-compress
+					.line.right-content
+						.separator5
+						.desktop.tablet
+							a(href="index.html#about", ng-click="setActiveLink('about')", ng-class="{'active': activeLink === 'about'}") Trivia 
+							a(href="index.html#contacts", ng-click="setActiveLink('contacts')", ng-class="{'active': activeLink === 'contacts'}") Contact 
+							a(href="http://codejets.com", target="_blank", ng-click="setActiveLink('blog')", ng-class="{'active': activeLink === 'blog'}") Blog 
+						.mobile
+
+		.separator15
